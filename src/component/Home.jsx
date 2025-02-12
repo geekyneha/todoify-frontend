@@ -20,17 +20,25 @@ const Home = () => {
   const handleEdit = (id) => {
     axios
       .put(API_URL + "/update/" + id)
-      .then((result) => location.reload())
-      .catch((err) => console.log(err));
-  };
-  const handleDelete = (id) => {
-    axios
-      .delete(API_URL + "/delete/" + id)
       .then((result) => {
-        location.reload();
+        setTodos((prevTodos) =>
+          prevTodos.map((todo) =>
+            todo._id === id ? { ...todo, status: true } : todo
+          )
+        );
       })
       .catch((err) => console.log(err));
   };
+
+  const handleDelete = (id) => {
+    axios
+      .delete(API_URL + "/delete/" + id)
+      .then(() => {
+        setTodos((prevTodos) => prevTodos.filter((todo) => todo._id !== id));
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div>
       <h2>Todify</h2>
