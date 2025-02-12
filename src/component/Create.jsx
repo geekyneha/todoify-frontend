@@ -13,7 +13,7 @@ const Create = () => {
       .catch((err) => console.log(err));
   };
   return (
-    <div>
+    <div className="input-container">
       <input type="text" id="" onChange={(e) => setTask(e.target.value)} />
       <button onClick={handleAdd}>Add</button>
     </div>

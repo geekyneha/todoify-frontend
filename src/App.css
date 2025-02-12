@@ -1,75 +1,128 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   height: 100vh;
   margin: 0;
-  background: palegoldenrod;
+  background: linear-gradient(135deg, #ffebf0, #ffc1d3);
 }
 
 /* Container */
-div {
+.todo-container {
+  background: white;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 700px;
   text-align: center;
-  border-radius: 8px;
 }
 
+/* Heading */
 h2 {
-  font-family: cursive;
-  font-size: 32px;
+  font-family: fantasy;
+  margin-left: 20px;
+  font-size: 36px;
+  color: #ff4d79;
+  margin-bottom: 20px;
 }
+
+/* Input Field */
+/* Input and Button Wrapper */
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 /* Input Field */
 input {
-  width: 400px;
-
-  margin-right: 5px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  outline: none;
+  flex: 1; /* Takes remaining space */
+  border: 2px solid #ff4d79;
   padding: 12px 14px;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+  background: #fff5f8;
+  width: 300px;
 }
 
+input:focus {
+  box-shadow: 0px 0px 8px rgba(255, 77, 121, 0.5);
+}
+.no-added {
+  margin: 0 10px;
+}
 /* Add Button */
 button {
   padding: 12px 30px;
   border: none;
-  background-color: #000;
+  background: linear-gradient(135deg, #ff4d79, #ff7396);
   color: white;
+  font-weight: bold;
   border-radius: 20px;
   cursor: pointer;
-  transition: 0.3s;
-}
-.line_through {
-  text-decoration: line-through;
+  transition: 0.3s ease;
+  margin-left: 5px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(135deg, #ff7396, #ff4d79);
+  transform: scale(1.05);
+}
+
+/* To-Do List */
+.todo-list {
+  margin-top: 20px;
+  text-align: left;
 }
 
 /* To-Do Items */
-h1 {
-  font-size: 18px;
-  color: gray;
-}
-
 .todo-item {
   display: flex;
   align-items: center;
-  width: 345px;
   justify-content: space-between;
-  background-color: black;
+  background: #ff4d79;
   color: white;
-  padding: 0 10px;
+  font-family: fantasy;
+  padding: 5px 15px;
   margin-top: 10px;
-  margin-left: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
 }
+
+.todo-item:hover {
+  background: #ff7396;
+  transform: scale(1.02);
+}
+
+/* Checked Task */
+.line_through {
+  text-decoration: line-through;
+  color: #ffccd6;
+}
+
+/* Checkbox */
 .checkbox {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
+
+/* Icons */
 .icon {
   cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: #ffd1e3;
+  transform: scale(1.2);
 }

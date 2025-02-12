@@ -44,7 +44,7 @@ const Home = () => {
       <h2>Todify</h2>
       <Create />
       {todos.length === 0 ? (
-        <h1>No to do added!</h1>
+        <h5 className="no-add">No todos yet. Add one above!</h5>
       ) : (
         todos.map((todo) => (
           <div className="todo-item">
