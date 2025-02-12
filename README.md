@@ -1,6 +1,10 @@
 # 📝 Todoify Frontend
 
-Welcome to the **Todoify Frontend** repository! This project serves as the client-side application for the Todoify platform, providing users with an intuitive interface to manage their to-do tasks efficiently.
+The Todoify Frontend is a user-friendly web application designed to help users efficiently manage their tasks. Built with React, it offers a seamless interface for creating, viewing, updating, and deleting to-do items. The application communicates with the Todoify Backend to perform CRUD (Create, Read, Update, Delete) operations on tasks. It utilizes Axios for making HTTP requests to the backend API. 
+
+## 🚀 Live Application
+
+Experience the live application here: [https://todoify-frontend.vercel.app/](https://todoify-frontend.vercel.app/)
 
 ## 🌟 Features
 
