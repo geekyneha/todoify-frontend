@@ -7,25 +7,25 @@ import {
   BsFillTrashFill,
 } from "react-icons/bs";
 
+const API_URL = "https://todoify-backend.onrender.com";
 const Home = () => {
   const [todos, setTodos] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:3001/get")
+      .get(API_URL + "/get")
       .then((result) => setTodos(result.data))
       .catch((err) => console.log(err));
   }, []);
 
   const handleEdit = (id) => {
     axios
-      .put("http://localhost:3001/update/" + id)
+      .put(API_URL + "/update/" + id)
       .then((result) => location.reload())
       .catch((err) => console.log(err));
   };
-
   const handleDelete = (id) => {
     axios
-      .delete("http://localhost:3001/delete/" + id)
+      .delete(API_URL + "/delete/" + id)
       .then((result) => {
         location.reload();
       })

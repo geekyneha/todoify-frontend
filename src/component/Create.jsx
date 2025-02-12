@@ -6,7 +6,7 @@ const Create = () => {
 
   const handleAdd = () => {
     axios
-      .post("http://localhost:3001/add", { task: task })
+      .post("https://todoify-backend.onrender.com/add", { task: task })
       .then((result) => {
         location.reload();
       })
