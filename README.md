@@ -13,6 +13,12 @@ Welcome to the **Todoify Frontend** repository! This project serves as the clien
 
 The Todoify Frontend communicates with the Todoify Backend to perform CRUD (Create, Read, Update, Delete) operations on to-do tasks. It utilizes React for building the user interface and Axios for making HTTP requests to the backend API.
 
+## 🔗 Backend
+
+The Todoify Backend is deployed and accessible at: [https://todoify-backend.onrender.com](https://todoify-backend.onrender.com)
+
+For more details, visit the backend repository: [https://github.com/geekyneha/todoify-backend](https://github.com/geekyneha/todoify-backend)
+
 ## 🛠️ Technologies Used
 
 - **React**: ⚛️ A JavaScript library for building user interfaces.
