@@ -57,12 +57,12 @@ input:focus {
 }
 /* Add Button */
 button {
-  padding: 12px 30px;
+  padding: 13px 30px;
   border: none;
   background: linear-gradient(135deg, #ff4d79, #ff7396);
   color: white;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s ease;
   margin-left: 5px;
@@ -120,6 +120,7 @@ button:hover {
   font-size: 18px;
   color: #fff;
   transition: 0.3s;
+  margin-left: 20px;
 }
 
 .icon:hover {
